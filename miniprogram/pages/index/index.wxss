@@ -1,0 +1,43 @@
+/**index.wxss**/
+
+page {
+  background-color: #f6f6f6;
+  padding-bottom: 60rpx;
+}
+
+.header {
+  width: 100%;
+}
+
+.header image {
+  width: 100%;
+}
+
+.list-items {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  color: #000000;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 6%);
+  padding: 16px 24px;
+  align-items: initial;
+  border-radius: 10px;
+}
+
+.list-item .title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.list-item .desc {
+  font-size: 14px;
+}

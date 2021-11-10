@@ -1,0 +1,2 @@
+<!--pages/detail/index.wxml-->
+<button class="btn-blue" bindtap="doCollect"> 收藏 </button>

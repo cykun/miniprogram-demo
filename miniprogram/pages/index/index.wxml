@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="header">
+    <image src="../../images/blog_item_pic.png" mode="aspectFill"></image>
+  </view>
+  <view class="list-items" wx:key="id" wx:for="{{blogList}}" wx:for-item="blog">
+    <view class="list-item" bindtap="jumpPage" data-page="detail">
+      <view class="item-main">
+        <view class="title">{{blog.title}}</view>
+        <view class="desc">{{blog.desc}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

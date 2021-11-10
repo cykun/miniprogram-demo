@@ -1,0 +1,16 @@
+<!--pages/login/index.wxml-->
+<view>
+  <view class="userinfo">
+      <view class='headView'>
+          <view class='headImageView'>
+              <image class='headImage' src="{{hasUserInfo? userInfo.avatarUrl: '../../images/default_headicon.png'}}"
+          mode='scaleToFill'></image>
+            </view>
+        </view>
+    <view class='contentText'>{{hasUserInfo? userInfo.nickName:'登录后同步数据'}}</view>
+    <button class="btn-blue" wx:if="{{canIUseGetUserProfile}}" bindtap="handleAuth"> {{hasUserInfo? '退出登录': '登录'}}
+    </button>
+    <button class="btn-blue" wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> {{hasUserInfo? '退出登录': '登录'}}
+    </button>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+button {
+  background: initial;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button::after {
+  border: none;
+}
+
+
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.btn-blue {
+  margin-top: 35px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 32px;
+  font-size: 14px;
+  background-color: #40a9ff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+  color: white;
+}
